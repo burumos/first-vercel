@@ -12,7 +12,7 @@ import { authenticate } from "../lib/actions";
 import { useActionState } from "react";
 
 export default function LoginForm() {
-  const [errorMessage, formAction, isPending] = useActionState(
+  const [errorMessage, formAction] = useActionState(
     authenticate,
     undefined
   );
